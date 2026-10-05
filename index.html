@@ -1,1 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wergêr Privacy Policy</title>
+<meta name="description" content="How the Wergêr app handles your data.">
+<style>
+  :root { --text: #1b1b1b; --muted: #5f6368; --accent: #009688; --bg: #ffffff; --line: #e3e3e3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #ececec; --muted: #a8a8a8; --accent: #26a69a; --bg: #121212; --line: #2c2c2c; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Wergêr Privacy Policy</h1>
+<p class="muted">Effective 5 October 2026</p>
+
+<p>Wergêr converts Kurdish text between the Latin and the Arabic script, on iPhone and Android. This policy explains what happens with your data when you use the app. In short: the app has no accounts, no ads and no analytics. Almost everything happens on your device. A few features use the internet, and only when you use them.</p>
+
+<h2>Who is responsible</h2>
+<p>besam, the developer of Wergêr. Contact: <a href="mailto:samad.pour.dev@gmail.com">samad.pour.dev@gmail.com</a></p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li>The text you type, paste, dictate, photograph or draw, and its conversion.</li>
+  <li>Your history and your saved conversions. They are stored only in the app's own storage on your device. They are never uploaded, and deleting the app deletes them.</li>
+  <li>Handwriting recognition runs on your device with Google ML Kit. The first time you use it for a script, the app downloads the recognition model from Google.</li>
+  <li>Kurmanji (Latin script) text in photos is recognized on your device.</li>
+  <li>Speech recognition and read-aloud with Wergêr's own speech model and voices run on your device. The app gets these files from the App Store or Google Play, the same way it gets app updates. Recordings and texts processed this way never leave your device.</li>
+</ul>
+
+<h2>What is sent over the internet, and only when you use it</h2>
+<p>Some features need a server when the on-device version is not available on your device yet (for example before the speech model is downloaded, or on older iOS versions). The first time such a feature would send something, the app asks you first. If you decline, nothing is sent.</p>
+<ul>
+  <li><strong>Voice input:</strong> the recording of what you say is sent to recognize the speech.</li>
+  <li><strong>Photos of Sorani (Arabic-script) text:</strong> the photo is sent to read its text.</li>
+  <li><strong>Read aloud:</strong> the text you ask to hear is sent to create the audio.</li>
+</ul>
+<p>These requests go to Wergêr's own services on Google Cloud in the Netherlands (Google Cloud Run, region europe-west4). Speech is recognized by Google Cloud Speech-to-Text in the same region; photos are read by Google Cloud Vision. Nothing is stored: the recording, the photo or the text is processed for that one request and then discarded. Our services keep no copy and log no content. Data logging for Google's speech service is switched off, so Google does not use your recordings to train its models. As with any internet connection, the servers see your IP address while they handle the request.</p>
+
+<h2>Wergêr Pro subscriptions</h2>
+<p>Wergêr Pro is sold through the App Store and Google Play. Apple and Google handle the payment; we never see your payment details. To check whether your subscription is active, the app uses RevenueCat, a subscription service. RevenueCat receives the store's purchase receipt and a random identifier the app creates for this purpose, together with basic device and app information. We do not have your name or e-mail address, and nothing you type, say or photograph is sent to RevenueCat. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>, <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://policies.google.com/privacy">Google's</a>.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Microphone:</strong> only while you use voice input.</li>
+  <li><strong>Camera and photos:</strong> only when you take or choose a photo to read its text.</li>
+</ul>
+<p>You can change these permissions at any time in your device's settings.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>No accounts or sign-ups.</li>
+  <li>No advertising and no tracking across apps or websites.</li>
+  <li>No analytics.</li>
+  <li>We do not sell or share your data.</li>
+</ul>
+<p>Google's on-device ML Kit libraries used for handwriting and photo recognition may send limited diagnostic information to Google; see <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms</a>.</p>
+
+<h2>Children</h2>
+<p>Wergêr is suitable for all ages and does not knowingly collect personal data from anyone, including children.</p>
+
+<h2>Your rights</h2>
+<p>Because Wergêr keeps your data on your device and its servers store nothing, there is no personal data on our side to look up, correct or delete. Under data protection laws such as the GDPR and the Swiss Federal Act on Data Protection you still have the right to ask about the processing described here, and to complain to a data protection authority. Write to <a href="mailto:samad.pour.dev@gmail.com">samad.pour.dev@gmail.com</a>.</p>
+
+<h2>Changes</h2>
+<p>When the app changes how it handles data, this page is updated and the date at the top changes.</p>
+</main>
+</body>
+</html>
 
