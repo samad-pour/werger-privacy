@@ -23,7 +23,7 @@
 <body>
 <main>
 <h1>Wergêr Privacy Policy</h1>
-<p class="muted">Effective 5 October 2026</p>
+<p class="muted">Effective 16 October 2026</p>
 
 <p>Wergêr converts Kurdish text between the Latin and the Arabic script, on iPhone, iPad and Android. This policy explains what happens with your data when you use the app. In short: the app has no accounts, no ads and no analytics. Almost everything happens on your device. A few features use the internet, and only when you use them.</p>
 
@@ -43,10 +43,15 @@
 <p>Some features need a server when the on-device version is not available on your device yet (for example before the speech model is downloaded, or on older iOS versions). The first time such a feature would send something, the app asks you first. If you decline, nothing is sent.</p>
 <ul>
   <li><strong>Voice input:</strong> the recording of what you say is sent to recognize the speech.</li>
-  <li><strong>Photos of Sorani (Arabic-script) text:</strong> the photo is sent to read its text.</li>
+  <li><strong>Photos your device cannot read itself</strong>, such as Sorani (Arabic-script) text: the photo is sent to read its text.</li>
   <li><strong>Read aloud:</strong> the text you ask to hear is sent to create the audio.</li>
 </ul>
-<p>These requests go to Wergêr's own services on Google Cloud in the Netherlands (Google Cloud Run, region europe-west4). Speech is recognized by Google Cloud Speech-to-Text in the same region; photos are read by Google Cloud Vision. Nothing is stored: the recording, the photo or the text is processed for that one request and then discarded. Our services keep no copy and log no content. Data logging for Google's speech service is switched off, so Google does not use your recordings to train its models. As with any internet connection, the servers see your IP address while they handle the request.</p>
+<p>Translation always needs the internet. The first time you choose a language to translate to or from, the app asks you first. If you decline, nothing is sent.</p>
+<ul>
+  <li><strong>Translation:</strong> the text you translate and the two languages are sent, together with a random number the app creates to count how much one device translates per day. Converting Sorani between its two alphabets stays on your device.</li>
+</ul>
+<p>For languages other than Kurdish, photos in an alphabet your device cannot read itself (for example Arabic, Cyrillic or Greek) are sent the same way as Sorani photos. Voice input in those languages uses your device's own speech recognition (Google's on Android, Apple's on iOS), which may process the recording on Google's or Apple's servers under their privacy terms; nothing goes to Wergêr. Reading those languages aloud uses your device's own voices and sends nothing.</p>
+<p>These requests go to Wergêr's own services on Google Cloud in the Netherlands (Google Cloud Run, region europe-west4). Speech is recognized by Google Cloud Speech-to-Text in the same region; photos are read by Google Cloud Vision; text is translated by Google Cloud Translation, which may process it outside the EU. Nothing is stored: the recording, the photo or the text is processed for that one request and then discarded. Our services keep no copy and log no content. Data logging for Google's speech service is switched off, so Google does not use your recordings to train its models. As with any internet connection, the servers see your IP address while they handle the request.</p>
 
 <h2>Wergêr Pro subscriptions</h2>
 <p>Wergêr Pro is sold through the App Store and Google Play. Apple and Google handle the payment; we never see your payment details. To check whether your subscription is active, the app uses RevenueCat, a subscription service. RevenueCat receives the store's purchase receipt and a random identifier the app creates for this purpose, together with basic device and app information. We do not have your name or e-mail address, and nothing you type, say or photograph is sent to RevenueCat. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>, <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://policies.google.com/privacy">Google's</a>.</p>
@@ -54,6 +59,7 @@
 <h2>Permissions</h2>
 <ul>
   <li><strong>Microphone:</strong> only while you use voice input.</li>
+  <li><strong>Speech recognition (iOS):</strong> only for voice input in languages other than Kurdish.</li>
   <li><strong>Camera and photos:</strong> only when you take or choose a photo to read its text.</li>
 </ul>
 <p>You can change these permissions at any time in your device's settings.</p>
